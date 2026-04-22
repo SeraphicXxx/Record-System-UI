@@ -109,7 +109,7 @@
         <button class="login-btn" onclick="login()">Login</button>
 
         <p class="error" id="error-msg">Invalid credentials</p>
-        <p class="success" id="success-msg">Login successful!</p>
+
     </div>
 
     <script>
@@ -124,10 +124,9 @@
             const errorMsg = document.getElementById("error-msg");
             const successMsg = document.getElementById("success-msg");
 
-            if (username === validUsername && password === validPassword) {
-                errorMsg.style.display = "none";
-                successMsg.style.display = "block";
-            } else {
+                   if (username === validUsername && password === validPassword) {
+                        window.location.href = "Temp.html";
+                    } else {
                 successMsg.style.display = "none";
                 errorMsg.style.display = "block";
             }
